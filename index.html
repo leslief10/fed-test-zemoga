@@ -11,8 +11,6 @@
 </head>
 <body>
 	<header>
-		<figure class="header--bg-img"></figure>
-
 		<section class="header-menu-container">
 			<h1 class="brand-name">Rule of thumb.</h1>
 
@@ -21,11 +19,13 @@
 					<li class="menu-list--item">Past Trials</li>
 					<li class="menu-list--item">How It Works</li>
 					<li class="menu-list--item">Login / Sign Up</li>
-					<li class="menu-list--item"><span class="menu-list--search"></span></li>
+					<li class="menu-list--item"><img src="./assets/img/search.svg" class="menu-list--search"></img></li>
 				</ul>
 			</nav>
+			<img src="./assets/img/hamburger.svg" alt="Dropdown button" class="menu-btn">
 		</section>
 
+		<div class="opinion-container--background"></div>
 		<section class="opinion-container">
 			<span class="opinion--request">What's your opinion on</span>
 			<h2 class="opinion--subject">Pope Francis?</h2>
@@ -35,77 +35,36 @@
 				<p>More information</p>
 			</span>
 			<p class="opinion--veredict">What's Your Veredict?</p>
+		</section>
+		<div class="opinion-thumbs-btns-container">
 			<span class="opinion--thumb-up"></span>
 			<span class="opinion--thumb-down"></span>
-		</section>
+		</div>
 		<div class="opinion--progress">
-			<span class="progress-until progress-positive">Closing in </span>
-			<span class="progress-timeframe progress-negative">
+			<span class="progress-until">Closing in </span>
+			<span class="progress-timeframe">
 				<span class="ammount">22</span>days
 			</span>
 		</div>
 	</header>
 	<main>
 		<aside class="how-it-works-container">
-			<span class="speak-out-container">
-				<p>Speak out. Be heard.</p>
+			<div class="speak-out-container">
+				<p>Speak out. Be heard. </p>
 				<p class="speak-out--text">Be counted</p>
-			</span>
+			</div>
 			<p class="how-it-works--text">Rule of Thumb is a crowd sourced court of public opinion where anyone and everyone can speak out and speak freely. It's easy: You share your opinion, we analyze and put the data in a public report.</p>
 		</aside>
 
 		<h3 class="previous-rulings-title">Previous Rulings</h3>
-		<section class="previous-rulings-container">
-			<section class="subject-container">
-				<figure class="subject--bg-img"></figure>
-				<span class="subject--ruling"><img src="./assets/img/thumbs-down.svg" alt=""></span>
-				<h3 class="subject--name">Kanye West</h3>
-				<p class="subject--description">Born in Atlanta and raised in Chicago, West was first known as a producer for Roc-A-Fella Records in the early 2000s, producing singles for several mainstream artists.</p>
-				<p class="subject--timeframe-category">1 month ago in Entertainment</p>
-				<span class="subject--thumb-up"></span>
-				<span class="subject--thumb-down"></span>
-				<button type="button" class="submit-vote">Vote Now</button>
-				<div class="subject--opinion-progress">
-					<span class="progress-positive"></span>
-					<span class="progress-negative"></span>
-				</div>
-			</section>
 
-			<section class="subject-container">
-				<figure class="subject--bg-img"></figure>
-				<span class="subject--ruling"><img src="./assets/img/thumbs-down.svg" alt=""></span>
-				<h3 class="subject--name">Kanye West</h3>
-				<p class="subject--description">Born in Atlanta and raised in Chicago, West was first known as a producer for Roc-A-Fella Records in the early 2000s, producing singles for several mainstream artists.</p>
-				<p class="subject--timeframe-category">1 month ago in Entertainment</p>
-				<span class="subject--thumb-up"></span>
-				<span class="subject--thumb-down"></span>
-				<button type="button" class="submit-vote">Vote Now</button>
-				<div class="subject--opinion-progress">
-					<span class="progress-positive"></span>
-					<span class="progress-negative"></span>
-				</div>
-			</section>
+		<section class="previous-rulings-container"></section>
 
-			<section class="subject-container">
-				<figure class="subject--bg-img"></figure>
-				<span class="subject--ruling"><img src="./assets/img/thumbs-down.svg" alt=""></span>
-				<h3 class="subject--name">Kanye West</h3>
-				<p class="subject--description">Born in Atlanta and raised in Chicago, West was first known as a producer for Roc-A-Fella Records in the early 2000s, producing singles for several mainstream artists.</p>
-				<p class="subject--timeframe-category">1 month ago in Entertainment</p>
-				<span class="subject--thumb-up"></span>
-				<span class="subject--thumb-down"></span>
-				<button type="button" class="submit-vote">Vote Now</button>
-				<div class="subject--opinion-progress">
-					<span class="progress-positive"></span>
-					<span class="progress-negative"></span>
-				</div>
-			</section>
+		<aside class="add-subjects-container">
+			<h4>Is there anyone else you would want us to add?</h4>
+			<button type="button" class="submit-name">Submit a name</button>
+		</aside>
 
-			<aside class="add-subjects-container">
-				<h4>Is there anyone else you would want us to add?</h4>
-				<button type="button" class="submit-name">Submit a name</button>
-			</aside>
-		</section>
 		<footer>
 			<ul class="footer-list">
 				<li class="footer-list--items">Terms and Conditions</li>
@@ -119,5 +78,6 @@
 			</span>
 		</footer>
 	</main>
+	<script src="./js/main.js"></script>
 </body>
 </html>
