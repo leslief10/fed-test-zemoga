@@ -1,5 +1,5 @@
 //import info from "../assets/data.json" assert { type: "json" };
-import { data } from "./data";
+import { data } from "./data.js";
 const subjects = data;
 
 /* Variable to determine the current year */
