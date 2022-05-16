@@ -1,7 +1,6 @@
-import info from "../assets/data.json" assert { type: "json" };
-const subjects = info.data;
-
-console.log(info.data);
+//import info from "../assets/data.json" assert { type: "json" };
+import { data } from "./data";
+const subjects = data;
 
 /* Variable to determine the current year */
 const currentDate = new Date();
@@ -64,9 +63,9 @@ function getSubjects() {
 
     /*Adds attributes */
     imgThumbUp.setAttribute('alt', 'Thumb up icon');
-    imgThumbUp.setAttribute('src', '../fed-test-zemoga/assets/img/thumbs-up.svg');
+    imgThumbUp.setAttribute('src', '../assets/img/thumbs-up.svg');
     imgThumbDown.setAttribute('alt', 'Thumb down icon');
-    imgThumbDown.setAttribute('src', '../fed-test-zemoga/assets/img/thumbs-down.svg');
+    imgThumbDown.setAttribute('src', '../assets/img/thumbs-down.svg');
     btnSubmitVote.setAttribute('disabled', '');
 
     /* Adds text */
@@ -81,16 +80,16 @@ function getSubjects() {
     if (window.innerWidth >= 1440) {
       subjectContainer.style.background =
       `linear-gradient(90deg, rgba(0, 0, 0, 0.0001) 0%, #888 27%, #666 50%, rgba(51, 51, 51, 0.6) 71.88%),
-      url("../fed-test-zemoga/assets/img/${subject.picture}") left center no-repeat`;
+      url("../assets/img/${subject.picture}") left center no-repeat`;
     } else if (window.innerWidth >= 768) {
       subjectContainer.style.background =
       `linear-gradient(90deg, rgba(0, 0, 0, 0.0001) 0%, #888 19.79%, #666 50%, rgba(51, 51, 51, 0.6) 71.88%),
-      url("../fed-test-zemoga/assets/img/${subject.picture}") left center no-repeat`;
+      url("../assets/img/${subject.picture}") left center no-repeat`;
       subjectContainer.style.backgroundSize = 'contain';
     } else {
       subjectContainer.style.background = 
       `linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), 
-      url('../fed-test-zemoga/assets/img/${subject.picture}') center no-repeat`;
+      url('../assets/img/${subject.picture}') center no-repeat`;
     }
 
     /*Appends each elements to their parent*/
@@ -111,10 +110,10 @@ function getSubjects() {
     const ruling = () => {
       if (positiveVotesPercentage >= 50.1) {
         subjectRuling.style.background = 'var(--color-green-positive)';
-        subjectRuling.style.content = `url('../fed-test-zemoga/assets/img/thumbs-up.svg')`;
+        subjectRuling.style.content = `url('../assets/img/thumbs-up.svg')`;
       } else {
         subjectRuling.style.background = 'var(--color-yellow-negative)';
-        subjectRuling.style.content = `url('../fed-test-zemoga/assets/img/thumbs-down.svg')`;
+        subjectRuling.style.content = `url('../assets/img/thumbs-down.svg')`;
       }
     }
     ruling();
