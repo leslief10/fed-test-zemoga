@@ -1,14 +1,14 @@
+import info from "../assets/data.json" assert { type: "json" };
+const subjects = info.data;
+
+console.log(info.data);
+
 /* Variable to determine the current year */
 const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
 
-async function getSubjects() {
-  const res = await fetch('../assets/data.json');
-  const info = await res.json();
 
-  const subjects = info.data;
-
-
+function getSubjects() {
   subjects.forEach(subject => {
     /* Elements already in the HTML file */
     const allSubjectsContainer = document.querySelector('.previous-rulings-container');

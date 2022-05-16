@@ -1,0 +1,19 @@
+{
+  "name": "fed-test-zemoga",
+  "version": "1.0.0",
+  "description": "Front-end test",
+  "main": "main.js",
+  "scripts": {
+    "start": "web-dev-server --node-resolve --open --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leslief10/fed-test-zemoga.git"
+  },
+  "author": "Leslie Fernandez <lesliefernandez10.lf@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leslief10/fed-test-zemoga/issues"
+  },
+  "homepage": "https://github.com/leslief10/fed-test-zemoga#readme"
+}
