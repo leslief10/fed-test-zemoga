@@ -1,0 +1,284 @@
+@media only screen and (min-width: 1024px) {
+  /*Header*/
+  header {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 31%), 
+    url('../assets/img/pope-francis.@2x.png') center no-repeat;
+    background-size: cover;
+  }
+  /*Header menu*/
+  .menu-container {
+    display: flex;
+    justify-content: flex-end;
+    width: fit-content;
+  }
+
+  .menu-list {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+  }
+
+  .menu-list--item {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--color-white);
+  }
+
+  .menu-list--search {
+    margin-left: 18px;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /*Header*/
+  header {
+    height: 700px;
+  }
+
+  /*Header Menu*/
+  .header-menu-container {
+    height: 141px;
+    padding: 52px 171px 46px;
+  }
+
+  /*Header Opinion*/
+
+  .opinion-container--background {
+    top: 139px;
+    margin-left: 171px;
+    width: 549px;
+    height: 474px;
+  }
+
+  .opinion-container {
+    margin: 0 0 30px 171px;
+    width: 550px;
+    height: 474px;
+    padding: 36px 90px 0 27px;
+  }
+
+  .opinion--request {
+    font-size: 1.8rem;
+  }
+  
+  .opinion--subject {
+    margin: 0px 0px 36px;
+    font-size: 5.4rem;
+  }
+  .opinion--text {
+    margin: 0px 0px 18px;
+    font-size: 2.4rem;
+    line-height: 2.88rem;
+  }
+  
+  .opinion--more-info {
+    gap: 9px;
+    margin-bottom: 18px;
+  }
+
+  .opinion--more-info img {
+    width: 27px;
+    height: 18px;
+  }
+
+  .opinion--more-info p {
+    font-size: 1.8rem;
+    text-decoration: none;
+  }
+  
+  .opinion--veredict {
+    font-size: 2.7rem;
+  }
+  
+  .opinion-thumbs-btns-container {
+    bottom: 85px;
+    left: 171px;
+  }
+  
+  .opinion--thumb-up,
+  .opinion--thumb-down {
+    width: 275px;
+    height: 82px;
+  }
+
+  /*Header Progress Bar*/
+  .opinion--progress {
+    height: 55px;
+  }
+
+  .progress-until {
+    width: 415px;
+    padding: 13px 18px 12px 0px;
+    font-size: 2.4rem;
+  }
+
+  .progress-until::after {
+    left: 415px;
+    top: 20px;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-left: 14px solid var(--color-dark-background);
+  }
+
+  .progress-timeframe {
+    width: calc(100% - 415px);
+    padding: 5px 0 6px 27px;
+    font-size: 3.6rem;
+  }
+
+  /*Main*/
+  main {
+    padding: 36px 170px 197px;
+  }
+
+  /*How It Works Aside*/
+  .how-it-works-container {
+    position: relative;
+    gap: 19px;
+    width: 1100px;
+    height: 88px;
+    padding: 22px 73px 22px 18px;
+    margin-bottom: 36px;
+  }
+
+  .speak-out-container {
+    width: 158px;
+  }
+
+  .speak-out-container p {
+    font-size: 1.8rem;
+  }
+
+  .speak-out-container .speak-out--text {
+    font-size: 2.7rem;
+  }
+
+  .how-it-works--text {
+    width: 853px;
+  }
+
+  .how-it-works--text::after {
+    position: absolute;
+    top: 33px;
+    right: 18px;
+    width: 20px;
+    content: url('../assets/img/close.svg');
+    cursor: pointer;
+  }
+
+  /* Previous Rulings title and list views container*/
+  .rulings-title-list-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+  }
+
+  .previous-rulings--views {
+    align-self: center;
+    width: 173px;
+    height: 36px;
+  }
+
+  .list-view {
+    font-size: 1.35rem;
+  }
+
+  .previous-rulings-title {
+    font-size: 4.5rem;
+  }
+
+  /*Previous Rulings carousel*/
+  .previous-rulings-container {
+    width: 1100px;
+    margin-block: 36px;
+    gap: 18px;
+  }
+
+  /*Previous Rulings subjects*/
+  .subject-container {
+    width: 1100px;
+    height: 170px;
+  }
+
+  .subject--ruling {
+    place-self: start;
+    width: 45px;
+    height: 45px;
+  }
+
+  .subject--name {
+    margin-left: 214px;
+    font-size: 3.6rem;
+    line-height: 6.3rem;
+  }
+
+  .subject--description {
+    margin-top: 3px;
+    margin-right: 170px;
+    margin-left: 214px;
+    font-size: 1.4rem;
+    line-height: 1.68rem;
+  }
+
+  .subject--timeframe-category {
+    margin: 0px 21px 21px 0;
+  }
+
+  .submit-vote {
+    margin-right: 21px;
+  }
+
+  .subject--thumb-up,
+  .subject--thumb-down {
+    width: 30px;
+    height: 30px;
+  }
+
+  .subject--opinion-progress {
+    width: 1100px;
+  }
+
+  /* Add subjects aside*/
+  .add-subjects-container {
+    justify-content: center;
+    gap: 118px;
+    width: 1099px;
+    height: 108px;
+    margin-bottom: 36px;
+    padding: 18px 36px;
+    background-size: cover;
+  }
+
+  .add-subjects-container h4 {
+    font-size: 2.7rem;
+  }
+
+  .submit-name {
+    width: 360px;
+    height: 72px;
+    font-size: 2.7rem;
+  }
+
+  /* Footer */
+  footer {
+    width: 1100px;
+    height: 73px;
+    padding-top: 37px;
+  }
+  
+  .footer-list {
+    gap: 36px;
+  }
+  
+  .follow-us-container {
+    gap: 19px;
+  }
+  
+  .follow-us-container p {
+    font-size: 1.5rem;
+  }
+}

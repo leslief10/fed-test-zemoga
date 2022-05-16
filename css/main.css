@@ -34,7 +34,6 @@ ul {
 }
 
 /*Shared styles*/
-
 header, 
 .header-menu-container, 
 .opinion-container, 
@@ -52,11 +51,6 @@ footer,
 	display: flex;
 }
 
-.opinion-container,
-.progress-until {
-	background: var(--color-dark-background);
-}
-
 .brand-name,
 .opinion--request,
 .opinion--subject,
@@ -72,13 +66,6 @@ footer,
 	color: var(--color-white);
 }
 
-
-.opinion--thumb-up, 
-.opinion--thumb-down {
-	width: 102px;
-	height: 32px;
-}
-
 .speak-out-container p,
 .speak-out-container .speak-out--text,
 .how-it-works--text,
@@ -89,39 +76,7 @@ footer,
 	color: var(--color-dark-gray);
 }
 
-.subject--ruling,
-.subject--thumb-up,
-.subject--thumb-down {
-	place-self: center end;
-	width: 30px;
-	height: 30px;
-}
-
-.subject--thumb-up:hover,
-.subject--thumb-down:hover {
-	cursor: pointer;
-}
-
-.progress-positive img,
-.progress-negative img {
-	width: 15px;
-	height: 15px;
-}
-
-.progress-positive,
-.progress-negative {
-	align-items: center;
-	gap: 6px;
-}
-
-.progress-positive--percentage,
-.progress-negative--percentage {
-	font-size: 1.8rem;
-	font-weight: 400;
-}
-
 /*Header*/
-
 header {
 	position: relative;
 	flex-direction: column;
@@ -133,7 +88,6 @@ header {
 }
 
 /*Header Menu*/
-
 .header-menu-container {
 	justify-content: space-between;
 	height: 66px;
@@ -154,10 +108,10 @@ header {
 .menu-btn {
 	align-self: flex-start;
 	width: 25px;
+	cursor: pointer;
 }
 
 /*Header Opinion*/
-
 .opinion-container--background {
 	position: absolute;
 	top: 56px;
@@ -177,6 +131,7 @@ header {
 	height: 292px;
 	padding: 12px 12px 0;
 	z-index: 1;
+	background: var(--color-dark-background);
 }
 
 .opinion--request {
@@ -210,26 +165,34 @@ header {
 
 .opinion-thumbs-btns-container {
 	position: absolute;
-	top: 326px;
+	bottom: 61px;
 	left: 12px;
 	z-index: 1;
+}
+
+.opinion--thumb-up, 
+.opinion--thumb-down {
+	width: 102px;
+	height: 32px;
 }
 
 .opinion--thumb-up {
 	background: var(--color-green-positive);
 	content: url('../assets/img/thumbs-up.svg');
 	object-fit: none;
+	cursor: pointer;
 }
 
 .opinion--thumb-down {
 	background: var(--color-yellow-negative);
 	content: url('../assets/img/thumbs-down.svg');
 	object-fit: none;
+	cursor: pointer;
 }
 
 /*Header Progress Bar*/
-
 .opinion--progress {
+	width: 100%;
 	height: 36px;
 }
 
@@ -241,6 +204,7 @@ header {
 	font-weight: 300;
 	text-align: right;
 	text-transform: uppercase;
+	background: var(--color-dark-background);
 }
 
 .progress-until::after {
@@ -269,14 +233,12 @@ header {
 }
 
 /*Main*/
-
 main {
 	flex-direction: column;
 	padding: 24px 12px 34.5px;
 }
 
 /*How It Works Aside*/
-
 .how-it-works-container {
 	align-items: center;
 	gap: 12px;
@@ -310,14 +272,17 @@ main {
 }
 
 /*Previous Rulings title*/
-
 .previous-rulings-title {
 	font-size: 2.4rem;
 	font-weight: 300;
 }
 
-/*Previous Rulings carousel*/
+/* Previous Rulings views button*/
+.previous-rulings--views {
+	display: none;
+}
 
+/*Previous Rulings carousel*/
 .previous-rulings-container {
 	width: 100%;
 	height: 300px;
@@ -332,7 +297,6 @@ main {
 }
 
 /*Previous Rulings subjects*/
-
 .subject-container {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
@@ -353,6 +317,9 @@ main {
 .subject--ruling {
 	grid-area: ruling;
 	object-fit: none;
+	place-self: center end;
+	width: 30px;
+	height: 30px;
 }
 
 .subject--name {
@@ -388,26 +355,32 @@ main {
 	text-align: right;
 }
 
+.subject--thumb-up,
+.subject--thumb-down {
+	place-self: center end;
+	width: 30px;
+	height: 30px;
+}
+
 .subject--thumb-up {
 	grid-area: thumb-up;
 	margin-right: 12px;
-	background: var(--color-green-positive);
+	background: var(--color-green-positive) url('../assets/img/thumbs-up.svg') center no-repeat;
 	border: none;
+	cursor: pointer;
 }
 
-.subject--thumb-up:focus {
-	outline: 0.5px solid var(--color-green-positive);
+.subject--thumb-up:focus,
+.subject--thumb-down:focus {
+	outline: 1px solid var(--color-white);
 }
 
 .subject--thumb-down {
 	grid-area: thumb-down;
 	margin-right: 12px;
-	background: var(--color-yellow-negative);
+	background: var(--color-yellow-negative) url(../assets/img/thumbs-down.svg) center no-repeat;
 	border: none;
-}
-
-.subject--thumb-down:focus {
-	outline: 0.5px solid var(--color-yellow-negative);
+	cursor: pointer;
 }
 
 .submit-vote {
@@ -423,6 +396,7 @@ main {
 }
 
 :disabled {
+	background: rgba(48, 48, 48, 0.6);
 	color: rgba(235, 235, 235, 0.5);
 	cursor: not-allowed;
 }
@@ -444,6 +418,12 @@ main {
 	height: 36px;
 }
 
+.progress-positive,
+.progress-negative {
+	align-items: center;
+	gap: 6px;
+}
+
 .progress-positive {
 	padding-left: 12px;
 	background: rgba(60, 187, 180, 0.6);
@@ -455,6 +435,19 @@ main {
 	background: rgba(249, 173, 29, 0.6);
 }
 
+.progress-positive img,
+.progress-negative img {
+	width: 15px;
+	height: 15px;
+}
+
+.progress-positive--percentage,
+.progress-negative--percentage {
+	font-size: 1.8rem;
+	font-weight: 400;
+}
+
+/* Add subjects aside*/
 .add-subjects-container {
 	flex-direction: column;
 	align-items: center;
@@ -468,9 +461,9 @@ main {
 
 .add-subjects-container h4 {
 	margin-bottom: 12px;
-	font-size: 24px;
+	font-size: 2.4rem;
 	font-weight: 400;
-	line-height: 28.8px;
+	line-height: 2.88rem;
 	text-align: center;
 }
 
@@ -479,6 +472,9 @@ main {
 	height: 48px;
 	background: transparent;
 	border: 2px solid var(--color-darker-gray);
+	font-size: 1.8rem;
+	font-weight: 400;
+	color: var(--color-darker-gray);
 }
 
 .submit-name:hover {
@@ -489,6 +485,7 @@ main {
 	outline: 0.5px solid var(--color-darker-gray);
 }
 
+/*Footer*/
 footer {
 	justify-content: space-between;
 	align-items: flex-end;
@@ -505,7 +502,7 @@ footer {
 
 .footer-list--items,
 .follow-us-container p {
-	font-size: 15px;
+	font-size: 1.5rem;
 	font-weight: 400;
 }
 

@@ -6,8 +6,10 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="description" content="Rule of Thumb&trade tracks the sentiment of our users on trending and controversial people from different fields, including politics, business, media and entertainment, etc.">
 	<title>Rule of Thumb</title>
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="./css/tablet.css">
+	<link rel="stylesheet" href="./css/desktop.css">
 </head>
 <body>
 	<header>
@@ -19,7 +21,7 @@
 					<li class="menu-list--item">Past Trials</li>
 					<li class="menu-list--item">How It Works</li>
 					<li class="menu-list--item">Login / Sign Up</li>
-					<li class="menu-list--item"><img src="./assets/img/search.svg" class="menu-list--search"></img></li>
+					<li><img src="./assets/img/search.svg" class="menu-list--search"></img></li>
 				</ul>
 			</nav>
 			<img src="./assets/img/hamburger.svg" alt="Dropdown button" class="menu-btn">
@@ -56,7 +58,12 @@
 			<p class="how-it-works--text">Rule of Thumb is a crowd sourced court of public opinion where anyone and everyone can speak out and speak freely. It's easy: You share your opinion, we analyze and put the data in a public report.</p>
 		</aside>
 
-		<h3 class="previous-rulings-title">Previous Rulings</h3>
+		<div class="rulings-title-list-container">
+			<h3 class="previous-rulings-title">Previous Rulings</h3>
+			<span class="previous-rulings--views">
+				<p class="list-view">List</p>
+			</span>
+		</div>
 
 		<section class="previous-rulings-container"></section>
 

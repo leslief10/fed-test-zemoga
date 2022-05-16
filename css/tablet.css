@@ -1,0 +1,303 @@
+@media only screen and (min-width: 768px) {
+  /*Header*/
+  header {
+    height: 451px;
+    background: 
+      linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 31%), 
+      url('../assets/img/pope-francis.@2x.png') center top no-repeat;
+    background-size: cover;
+  }
+
+  /*Header Menu*/
+  .header-menu-container {
+    height: 70px;
+    padding: 35px 28px 6px 21px;
+  }
+
+  /*Header Opinion*/
+
+  .opinion-container--background {
+    top: 70px;
+    margin-left: 21px;
+    width: 368px;
+    height: 313px;
+  }
+
+  .opinion-container {
+    margin: 0 0 27px 21px;
+    width: 368px;
+    height: 321px;
+    padding: 28px 22px 0 21px;
+  }
+
+  .opinion--request {
+    margin-bottom: 0;
+    font-size: 1.4rem;
+  }
+  
+  .opinion--subject {
+    margin: 0px 0px 21px;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+  }
+  .opinion--text {
+    margin: 0px 0px 14px;
+    font-size: 1.75rem;
+    line-height: 2.1rem;
+  }
+  
+  .opinion--more-info {
+    display: flex;
+    gap: 7px;
+    margin-bottom: 19px;
+  }
+
+  .opinion--more-info img {
+    width: 21px;
+    height: 15px;
+  }
+
+  .opinion--more-info p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-decoration: underline;
+    color: var(--color-white);
+  }
+  
+  .opinion--veredict {
+    font-size: 2.1rem;
+  }
+  
+  .opinion-thumbs-btns-container {
+    bottom: 69px;
+    left: 21px;
+  }
+  
+  .opinion--thumb-up,
+  .opinion--thumb-down {
+    width: 184px;
+    height: 38.5px;
+  }
+
+  /*Header Progress Bar*/
+  .opinion--progress {
+    height: 42px;
+  }
+
+  .progress-until {
+    width: 249.16px;
+    padding: 13px 7.5px 12px 0px;
+    font-size: 1.4rem;
+  }
+
+  .progress-until::after {
+    left: 249px;
+    top: 15px;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid var(--color-dark-background);
+  }
+
+  .progress-timeframe {
+    width: calc(100% - 249px);
+    padding: 10px 0 10px 14px;
+    font-size: 1.8rem;
+  }
+
+  /*Main*/
+  main {
+    align-items: center;
+    padding: 28px 24px 45px 21px;
+  }
+
+  /*How It Works Aside*/
+  .how-it-works-container {
+    gap: 21px;
+    width: 723px;
+    height: 110px;
+    padding: 23px 14px;
+    margin-bottom: 28px;
+  }
+
+  .speak-out-container {
+    width: 129px;
+  }
+
+  .speak-out-container p {
+    font-size: 1.4rem;
+  }
+
+  .speak-out-container .speak-out--text {
+    font-size: 2.1rem;
+  }
+
+  .how-it-works--text {
+    width: 565px;
+    font-size: 1.8rem;
+    line-height: 2.16rem;
+    letter-spacing: -0.75px;
+  }
+
+  /* Previous Rulings title and list views container*/
+  .rulings-title-list-container {
+    display: flex;
+    justify-content: space-between;
+    width: 723px;
+  }
+
+  .previous-rulings--views {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    width: 131px;
+    height: 28px;
+    background: transparent;
+    border: 2px solid var(--color-darker-gray);
+    cursor: pointer;
+  }
+
+  .previous-rulings--views::after {
+    position: absolute;
+    right: 16.5px;
+    top: 9px;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid var(--color-darker-gray);
+  }
+
+  .list-view {
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: var(--color-darker-gray);
+  }
+
+  /*Previous Rulings carousel*/
+  .previous-rulings-container {
+    flex-direction: column;
+    width: 723px;
+    height: 100%;
+    margin-block: 28px;
+    gap: 14px;
+    overflow-x: initial;
+  }
+
+  /*Previous Rulings subjects*/
+  .subject-container {
+    display: grid;
+    grid-template-columns: repeat(11, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "ruling name name name name name . timeframe timeframe timeframe timeframe"
+    ". description description description description description . thumb-up thumb-down btn btn"
+    "opinion opinion opinion opinion opinion opinion opinion opinion opinion opinion opinion";
+    width: 723px;
+    height: 142px;
+  }
+
+  .subject--ruling {
+    place-self: start;
+  }
+
+  .subject--name {
+    align-self: end;
+    margin-left: 94px;
+    font-size: 2.8rem;
+    line-height: 3.36rem;
+    overflow: unset;
+  }
+
+  .subject--description {
+    margin-top: 1.5px;
+    margin-right: 0px;
+    margin-left: 94px;
+    font-size: 1.4rem;
+    line-height: 1.68rem;
+  }
+
+  .subject--timeframe-category {
+    align-self: end;
+    margin-block: 0;
+    margin: 0px 14px 5px 0;
+  }
+
+  .submit-vote {
+    justify-self: end;
+    align-self: center;
+    margin-right: 12px;
+    font-size: 1.5rem;
+  }
+
+  .subject--opinion-progress {
+    align-self: end;
+    margin-top: 0;
+    width: 723px;
+  }
+
+  .progress-negative {
+    padding-right: 12px;
+  }
+
+  /* Add subjects aside*/
+  .add-subjects-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+    width: 728px;
+    height: 108px;
+    margin-bottom: 28px;
+    padding: 26px 28px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
+    url('../assets/img/bg-people.@2x.png') center no-repeat;
+  }
+
+  .add-subjects-container h4 {
+    margin-bottom: 0;
+    font-size: 2.1rem;
+    line-height: 2.52rem;
+  }
+
+  .submit-name {
+    width: 224px;
+    height: 56px;
+  }
+
+  /* Footer */
+  footer {
+    width: 728px;
+    height: 73px;
+    padding-top: 35.5px;
+  }
+  
+  .footer-list {
+    flex-direction: row;
+    gap: 28px;
+  }
+  
+  .footer-list--items {
+    font-size: 1.8rem;
+  }
+  
+  .follow-us-container {
+    display: flex;
+    gap: 14px;
+  }
+  
+  .follow-us-container p {
+    margin-bottom: 0px;
+    font-size: 1.75rem;
+  }
+  
+  .follow-us-container p + img {
+    margin-right: 0px;
+  }
+
+  .follow-us-container img {
+    width: 24px;
+    height: 24px;
+  }
+}
